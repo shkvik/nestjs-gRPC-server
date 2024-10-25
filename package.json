@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-template",
+  "name": "nestjs-grpc-server",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -17,6 +17,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "grpc:windows": "protoc --proto_path=src/shared/grpc/example --plugin=protoc-gen-ts --ts_proto_out=src/shared/grpc/example/generated-nestjs --ts_proto_opt=nestJs=true example.proto",
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
