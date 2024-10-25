@@ -13,4 +13,12 @@ export class ConfigApp {
   @IsString()
   @IsNotEmpty()
   HOST: string;
+
+  @IsString()
+  @IsNotEmpty()
+  PROTO_PATH: string;
+
+  @IsString()
+  @IsNotEmpty()
+  PROTO_URL: string;
 }
