@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package exampleRpc1;
+
+import "google/protobuf/empty.proto";
+
+service ExampleRpc1 {
+  rpc GetHello(google.protobuf.Empty) returns (GetHelloRes);
+  rpc GetWorld(google.protobuf.Empty) returns (GetWorldRes);
+}
+
+message GetHelloRes {
+  optional string hello = 1;
+}
+
+message GetWorldRes {
+  optional string world = 1;
+}

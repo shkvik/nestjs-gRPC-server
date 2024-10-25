@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "example-service-1.proto";
+import "example-service-2.proto";
+import "example-service-3.proto";
+
+package example;
